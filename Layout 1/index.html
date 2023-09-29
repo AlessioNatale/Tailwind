@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components{
+      li{
+        @apply bg-white w-12 h-16 p-4 m-6 text-xl
+      }
+      p{
+        @apply mt-16 ml-14 text-2xl
+      }
+      ul{
+        @apply flex flex-col items-center
+      }
+    }
+  </style>
+</head>
+
+<body class="flex justify-between gap-10 h-[100vh] " >
+  <section id="green" class="bg bg-green-300 order-3 w-1/5">
+    <p>GREEN</p>
+  </section>
+  <section id="yellow" class="bg bg-yellow-100 order-1 w-1/5">
+    <p class="text-center ml-0">YELLOW</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </section>
+  <section id="orange" class="bg-orange-200 order-4 w-2/5">
+    <p>ORANGE</p>
+  </section>
+  <section id="red" class="bg bg-red-300 order-2 w-1/5">
+    <p>RED</p>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+  </section>
+  <section id="blue" class="bg-blue-300 order-5 w-1/5">
+    <p>BLUE</p>
+  </section>
+</body>
+
+</html>
